@@ -18,4 +18,10 @@ public class Holes : MonoBehaviour
         Score.Instance.money += winnings;
         winningsSource.Play();
     }
+
+    public float ScoreAddWithMultiplier(int winnings, float multiplier)
+    {
+        float win = winnings * Mathf.Abs(multiplier);
+        return win;
+    }
 }
