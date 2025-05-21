@@ -53,7 +53,7 @@ public class PachinkoTesting
         GameObject scoreboard = new GameObject("Score");
         Holes holes = scoreboard.AddComponent<Holes>();
 
-        float score =300- holes.ScoreAddWithMultiplier(100, 1.5f);
+        float score =300+ holes.ScoreAddWithMultiplier(-100, 1.5f);
 
         Assert.Less(score, 200);
 
